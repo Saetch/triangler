@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const WasmPackPlugin = require('@wasm-tool/wasm-pack-plugin');
 
 module.exports = {
+    devtool: 'source-map',
     entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),

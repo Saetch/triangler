@@ -1,5 +1,6 @@
 use three_d::*;
 
+#[allow(unused)]
 pub fn main() {
     // Create a window (a canvas on web)
     let window = Window::new(WindowSettings {
@@ -11,7 +12,6 @@ pub fn main() {
 
     // Get the graphics context from the window
     let context = window.gl();
-
     // Create a camera
     let mut camera = Camera::new_perspective(
         window.viewport(),
