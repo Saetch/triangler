@@ -42,3 +42,18 @@ $ cargo run --release
 
 # Debug
 1. You can use VSCode Debugger (CodeLLDB) to debug it with the provided launch configuration
+
+
+# Run in Release mode in web
+
+``` console
+$ npm run build
+```
+make sure you have a static file server installed, for example
+``` console
+$ npm i -g http-server
+```
+and then run
+``` console
+$ http-server dist -p 8123
+``` 
